@@ -387,14 +387,14 @@ class LinkedBST(AbstractCollection):
         for word in rand_word_lst:
             bst1.find(word)
         end = time.perf_counter()
-        print('Task2: Time for bst shuffled: ', end - start)
+        print('Task3: Time for bst shuffled: ', end - start)
 
         bst.rebalance()
         start = time.perf_counter()
         for word in rand_word_lst:
             bst.find(word)
         end = time.perf_counter()
-        print('Task3: Time for rebalanced bst: ', end - start)
+        print('Task4: Time for rebalanced bst: ', end - start)
 
 
 if __name__ == '__main__':
